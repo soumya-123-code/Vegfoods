@@ -1,0 +1,9 @@
+{% if all_category %}
+    <ul>
+    {% for x in all_category %}
+        <li><a href="/polls/{{ x.category_name}}/">{{ x.category_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
